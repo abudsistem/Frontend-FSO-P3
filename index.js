@@ -37,6 +37,8 @@ const unknownEndpoint = (request, response) => {
   response.status(404).send({ error: 'unknown endpoint' })
 }
 
+app.use(express.static('dist'))
+
 app.get('/', (request, response) => {
   response.send('<h1>Hello World!</h1>')
 })
