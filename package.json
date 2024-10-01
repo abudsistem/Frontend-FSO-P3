@@ -8,7 +8,9 @@
     "dev": "nodemon index.js",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "build:ui": "rm -rf dist && cd ../../P2/FSONoteApp && npm run build && cp -r dist ../../P3/backendFSO",
+    "deploy:full":"npm run build:ui && git add . && git commit -m uibuild && git push"
   },
   "dependencies": {
     "cors": "^2.8.5",
