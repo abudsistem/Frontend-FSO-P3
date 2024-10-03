@@ -3,8 +3,11 @@ import mongoose from "mongoose"
 
 mongoose.set('strictQuery', false)
 
-
+//Esto deberia funcionar pero no va
 //const url = process.env.MONGODB_URI
+
+// Esto es peligroso no se debe hacer
+//pero si no esta asi no funciona
 const url = "mongodb+srv://fullstack:fullstackpassword@cluster0.dvseu.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 
 console.log('connecting to', url)

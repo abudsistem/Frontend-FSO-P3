@@ -1,6 +1,6 @@
 import express from 'express'
 import cors from 'cors'
-import mongoose from 'mongoose';
+//import mongoose from 'mongoose';
 const app = express()
 //const Note = require('./models/note')
 import Note from './models/note.js';
