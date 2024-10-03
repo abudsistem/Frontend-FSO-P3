@@ -10,11 +10,12 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "build:ui": "rm -rf dist && cd ../../P2/FSONoteApp && npm run build && cp -r dist ../../P3/backendFSO",
-    "deploy:full":"npm run build:ui && git add . && git commit -m uibuild && git push"
+    "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git push"
   },
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.21.0",
+    "mongoose": "^8.7.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
